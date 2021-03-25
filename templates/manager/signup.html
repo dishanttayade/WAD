@@ -1,0 +1,45 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+    
+    {% block link %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+        
+    {% endblock  %}
+        
+
+    
+    {% block title %}
+        Signup for MEDISAFE
+    {% endblock  %}
+
+
+    
+    {% block body %}
+    <div class="container">
+        <h1>Sign Up</h1>
+        Already a member? <a href="{% url 'manager:login' %}">Log In</a>
+        <hr>
+        <form action="?signup" class="form">
+            <input type="text" id="fname" placeholder="First Name"> <br>  
+            <input type="text" id="lname" placeholder="Last Name"> <br>  
+            <input type="text" id="email" placeholder="Email"> <br>  
+            <input type="password" id="password" placeholder="Password"> 
+        </form>
+        <button class="btn btn-primary">Sign Up</button>
+        <div class="orlogwith">
+            <h5>or Sign Up with</h5>
+            <div class="d-flex justify-content-center">
+                <a href=""><img src="{% static 'pics/google.png' %}" alt="google"></a>
+                &emsp;
+                <a href=""><img src="{% static 'pics/facebook.png' %}" alt=""></a>
+            </div>
+        </div>
+       
+    </div>     <br><br> 
+    {% endblock  %}
+        
+  
+
+
+<!--    Dishant Tayade  S20190010175    -->

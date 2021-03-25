@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block title %}
+    MEDISAFE HOME
+{% endblock  %}
+    
+
+
+{% block body %}
+     
+<section class="background-image-inner" style="background-image: url('{% static 'pics/Banner.jpg' %}');" >	 
+    <div class="image-header-main d-flex justify-content-md-center" id="textonpic">
+        <div class="container text-white">
+            <h2 class="inner-title category m-5 display-1">Headline
+            </h2>
+        </div>
+    </div>
+</section> 
+
+<section id="textonpic2" class="background-inner-image" style="background-image: url('{% static 'pics/homeimg.jpg' %}');">
+    <div class="image-header-main d-flex start-0" >
+        <div class="container align-content-lg-start">
+            <h2 class="inner-title category m-4 text-dark display-5">Here, we are going to explain some bulls**t. At this time I don't know what to write.
+            </h2>
+        </div>
+    </div>
+</section>
+
+<section class="" id="textoncanvas">
+    <div class="d-flex justify-content-center text-center">
+        howareyou
+        <h1></h1>
+    </div>
+</section>
+
+
+
+{% endblock  %}
+    
